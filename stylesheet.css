@@ -1,0 +1,232 @@
+/* GENERAL RESETS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Lucida Console', Courier, monospace;
+    src: url(./font/lucon.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    src: url(./font/MaterialIconsRound-Regular.otf);
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* BODY */
+
+.body_container {
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Lucida Console', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #C6CFA2;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+/* HEADER */
+
+.header_container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.buttonMusic_container {
+    width: 300px;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.music_button {
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: 'Lucida Console', Courier, monospace;
+    font-size: 1em;
+    color: #e0e4d1;
+    background-color: #a3aa85;
+}
+
+.logo__container {
+    width: 100%
+}
+
+
+/* MAIN SECTION */
+
+.game__container {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+/* GAME BOARD */
+
+.game__board {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 600px;
+    width: 300px;
+}
+
+
+/* BLOQUES */
+
+.game__blocks {
+    background-color: black;
+    opacity: 0.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game__blocks--interior {
+    width: 17px;
+    height: 17px;
+    border: 4px solid #C6CFA2;
+}
+
+
+/* ASIDE BOARD */
+
+.instruction__board {
+    width: 150px;
+    height: 300px;
+    border: 2px solid #333333;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.score__title {
+    color: #333333;
+}
+
+#score__board {
+    width: 120px;
+    height: 30px;
+    border: 2px solid #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.next-tetro__board {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #333333;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.instruction-key__board {
+    width: 100%;
+    color: #333333;
+}
+
+.move__row,
+.rotate__row {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+
+/* TETROMINOS */
+
+.tetromino {
+    opacity: 1;
+}
+
+
+/* GAME OVER DIV */
+
+.gameOverDiv {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: #C6CFA2;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.gameOverButton {
+    background-color: #C6CFA2;
+    padding: 5px;
+    width: 40%;
+}
+
+.gameOverButton:hover {
+    background-color: #a3aa85;
+}
+
+.gameOverButton:active {
+    background-color: #C6CFA2;
+}
+
+.gameOverDiv p {
+    font-size: 1.5rem;
+}

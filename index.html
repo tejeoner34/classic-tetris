@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css"></link>
+    <title>Tetris</title>
+</head>
+
+<body class="body_container">
+ 
+    <!-- HEADER -->
+    <div class="header_container">
+        <div class= "buttonMusic_container">
+            <input type="button" class="music_button" value="&#9658 MUSIC" id="play"></input> 
+            <audio src="music/assets_theme.mp3" id="audio" preload="auto" loop></audio>
+         </div>
+        <img class="logo__container" src="./img/tetris_logo.jpeg">
+    </div>
+    <!-- MAIN SECTION -->
+    <div class="game__container">
+        <div class="game__board">
+        </div>
+        <!-- INSTRUCTION BOARD -->
+        <div class="instruction__board">
+            <h4 class="score__title">Score</h4>
+            <div id="score__board">
+            </div>
+            <div class="next-tetro__board">
+            </div>
+            <div class="instruction-key__board">
+                <!-- MOVE ROW -->
+                <div class="move__row">
+                    <span class="material-icons">
+                        arrow_back
+                    </span>
+                    <span class="material-icons">
+                        arrow_forward
+                    </span>
+                    <span class="material-icons">
+                        arrow_downward
+                    </span>
+                    <p>Move</p>
+                </div>
+                <!-- ROTATE ROW -->
+                <div class="rotate__row">
+                    <span class="material-icons">
+                        arrow_upward
+                    </span>
+                    <p>Rotate</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
