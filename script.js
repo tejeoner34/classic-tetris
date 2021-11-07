@@ -49,8 +49,8 @@ function generateBoardBlock() {
     const bloqueInterior = document.createElement('div'); // este div lo creo para incluirlo dentro de bloque más grande
     bloqueInterior.classList.add('game__blocks--interior');
     bloque.appendChild(bloqueInterior);
-    bloque.style.width = '25px';
-    bloque.style.height = '25px';
+    // bloque.style.width = '25px';
+    // bloque.style.height = '25px';
     return bloque;
 }
 

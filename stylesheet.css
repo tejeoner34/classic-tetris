@@ -122,6 +122,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 25px;
+    height: 25px;
 }
 
 .game__blocks--interior {
@@ -237,7 +239,8 @@
 @media (max-width: 790px){
 
     .body_container{
-        align-content: inherit;
+        align-content: center;
+        gap: 1rem;
     }
 
     .header_container{
@@ -262,6 +265,19 @@
 
     }
 
+    .game__blocks{
+        height: 20px;
+        width: 20px;
+    }
+
+    .instruction__board{
+        width: 130px;
+    }
+
+    .next-tetro__board{
+        height: 100px;
+        width: 100px;
+    }
 
     #score__board {
         width: 80%;
@@ -277,14 +293,20 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
         width: 40%;
         touch-action: manipulation;
     }
 
+    .move-buttons-container{
+        display: flex;
+        gap: 3rem;
+    }
+
     .buttons button{
         background-color: #C6CFA2;
-        width: 40px;
+        width: 50px;
+        height: 50px;
     }
     
 }
