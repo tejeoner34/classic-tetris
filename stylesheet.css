@@ -279,6 +279,7 @@
         align-items: center;
         gap: 1rem;
         width: 40%;
+        touch-action: manipulation;
     }
 
     .buttons button{
