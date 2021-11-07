@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheet.css"></link>
+    <link rel="stylesheet" href="./stylesheet.css">
+    </link>
     <title>Tetris</title>
 </head>
 
 <body class="body_container">
- 
+
     <!-- HEADER -->
     <div class="header_container">
-        <div class= "buttonMusic_container">
-            <input type="button" class="music_button" value="&#9658 MUSIC" id="play"></input> 
+        <div class="buttonMusic_container">
+            <input type="button" class="music_button" value="&#9658 MUSIC" id="play"></input>
             <audio src="music/assets_theme.mp3" id="audio" preload="auto" loop></audio>
-         </div>
+        </div>
         <img class="logo__container" src="./img/tetris_logo.jpeg">
     </div>
     <!-- MAIN SECTION -->
@@ -52,6 +53,25 @@
                     <p>Rotate</p>
                 </div>
             </div>
+        </div>
+       
+    </div>
+    <div class="buttons">
+        <div class="move-buttons-container">
+        <button id="left-button"><span class="material-icons">
+            arrow_back
+        </span></button>
+        <button id="right-button"><span class="material-icons">
+            arrow_forward
+        </span></button>
+        <button id="down-button"><span class="material-icons">
+            arrow_downward
+        </span></button>
+    </div>
+        <div class="rotate-button-container">
+            <button id="rotate-button"><span class="material-icons">
+                arrow_upward
+            </span></button>
         </div>
 
     </div>

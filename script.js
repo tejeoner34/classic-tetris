@@ -457,3 +457,15 @@ function gameOver() {
         drawGameOverBoard();
     }
 }
+
+// Buttons for mobile version
+
+const leftButton = document.getElementById('left-button');
+const rightButton = document.getElementById('right-button');
+const downButton = document.getElementById('down-button');
+const rotateButton = document.getElementById('rotate-button');
+
+leftButton.addEventListener('click',moveLeft);
+rightButton.addEventListener('click',moveRight);
+downButton.addEventListener('click',moveDown);
+rotateButton.addEventListener('click',rotate);
